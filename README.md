@@ -46,13 +46,18 @@ Patriot: Detection occurs with structures CONTEXT pointing to VirtualProtect. A 
 
 # Credit
 
-* https://github.com/Cracked5pider/Ekko 
-* https://github.com/y11en/FOLIAGE/tree/master/source
+- https://github.com/Cracked5pider/Ekko 
+- https://github.com/y11en/FOLIAGE/tree/master/source
+
+
 For using NtContinue with CONTEXT structure for the ROP chain.
 
-* https://www.unknowncheats.me/forum/anti-cheat-bypass/268039-x64-return-address-spoofing-source-explanation.html
-* https://github.com/kyleavery/AceLdr/blob/main/src/retaddr.c
+- https://www.unknowncheats.me/forum/anti-cheat-bypass/268039-x64-return-address-spoofing-source-explanation.html
+- https://github.com/kyleavery/AceLdr/blob/main/src/retaddr.c
+
+
 For return address spoofing.
 
-* https://institute.sektor7.net/rto-maldev-adv1
+- https://institute.sektor7.net/rto-maldev-adv1
+
 For a course on memory encryption during sleep.
