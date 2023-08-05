@@ -35,14 +35,19 @@
 # How it's work
 
 A sleep obfuscation tool is used to encrypt the content of the .text section with RC4 (using SystemFunction032). To achieve this encryption, a ROP chain is employed with QueueUserAPC and NtContinue.
+
 For each sleep, the encryption key changes, and the key is generated using the BCRYPT API. All function calls in Kernel32.dll and bcrypt.dll are subjected to return address spoofing, with the fake return address being located in KernelBase.dll.
+
 The thread created spoof the start address (TpReleaseCleanupGroupMembers+0x450).
 
 For memory scanners:
 
 Moneta: The content of the .text section is encrypted with a 40-byte offset (size of SECTION HEADER), ensuring no Indicator of Compromise (IoC) with Moneta.
+
 Hunt-Sleeping-Beacons: No detection is present.
+
 Patriot: Detection occurs with structures CONTEXT pointing to VirtualProtect. A small modification is needed to evade this detection.
+
 
 # Credits
 
