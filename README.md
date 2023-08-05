@@ -1,4 +1,4 @@
-#Kraken Mask
+# Kraken Mask
 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -30,7 +30,9 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣷⣄⣀⠀⢀⣀⣴⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-#How it's work
+
+
+# How it's work
 
 A sleep obfuscation tool is used to encrypt the content of the .text section with RC4 (using SystemFunction032). To achieve this encryption, a ROP chain is employed with QueueUserAPC and NtContinue.
 For each sleep, the encryption key changes, and the key is generated using the BCRYPT API. All function calls in Kernel32.dll and bcrypt.dll are subjected to return address spoofing, with the fake return address being located in KernelBase.dll.
@@ -42,7 +44,7 @@ Moneta: The content of the .text section is encrypted with a 40-byte offset (siz
 Hunt-Sleeping-Beacons: No detection is present.
 Patriot: Detection occurs with structures CONTEXT pointing to VirtualProtect. A small modification is needed to evade this detection.
 
-#Credit
+# Credit
 
 * https://github.com/Cracked5pider/Ekko 
 * https://github.com/y11en/FOLIAGE/tree/master/source
