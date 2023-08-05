@@ -44,7 +44,7 @@ Moneta: The content of the .text section is encrypted with a 40-byte offset (siz
 Hunt-Sleeping-Beacons: No detection is present.
 Patriot: Detection occurs with structures CONTEXT pointing to VirtualProtect. A small modification is needed to evade this detection.
 
-# Credit
+# Credits
 
 - https://github.com/Cracked5pider/Ekko 
 - https://github.com/y11en/FOLIAGE/tree/master/source
